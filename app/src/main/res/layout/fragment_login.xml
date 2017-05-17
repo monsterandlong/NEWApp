@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_right"
+    tools:context="com.bf.com.myapplication.fragment.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_loginFrag_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/registered"
+            android:layout_marginTop="50dp"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/tv_loginFrag_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="立刻登录"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_loginFrag_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新版本"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@mipmap/registered_bg"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="55dp">
+            <ImageView
+                android:id="@+id/img_loginFrag_QQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/registered_qq"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:onClick="onClick"/>
+            <ImageView
+                android:id="@+id/img_loginFrag_YX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/registered_yx"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_loginFrag_QQ"
+                android:layout_marginLeft="5dp"
+                android:onClick="onClick"
+                />
+            <ImageView
+                android:id="@+id/img_loginFrag_XL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/registered_xl"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_loginFrag_YX"
+                android:onClick="onClick"
+                />
+            <ImageView
+                android:id="@+id/img_loginFrag_YQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/registered_yq"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_loginFrag_XL"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

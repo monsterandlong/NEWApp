@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bf.com.myapplication.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_home_jvn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="军事"
+            android:textSize="20dp"
+            android:textColor="#ec1e1e"/>
+        <TextView
+            android:id="@+id/tv_home_shehui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社会"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/tv_home_jvn"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_right"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <com.bf.com.myapplication.view.XListViewHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.bf.com.myapplication.view.XListView
+        android:id="@+id/listview"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/menu_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/menu_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <com.bf.com.myapplication.view.XListViewFooter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
